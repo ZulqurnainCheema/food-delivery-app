@@ -8,7 +8,7 @@ const addFoodItem = async (req, res) => {
     return res.status(400).json({ error: "No file uploaded" });
   }
 
-  let image_filename = `${req.file.filename}`;
+    const imageUrl = `${req.protocol}://${req.get('host')}/public/${req.file.filename}`
 
   // Handle price depending on whether sizes are available or not
   let foodPrice;
@@ -32,7 +32,7 @@ const addFoodItem = async (req, res) => {
     description: req.body.description,
     price: foodPrice,
     category: req.body.category,
-    image: image_filename,
+    image: imageUrl,
     sizes: req.body.sizes === "true", // Convert to boolean
     addOns: addOns.length > 0 ? addOns : null, // Store addOns data if present
   });
