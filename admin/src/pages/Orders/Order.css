@@ -1,0 +1,162 @@
+/* General styling for all screen sizes */
+.Order {
+    padding: 20px;
+}
+
+.Order h2 {
+    font-size: 1.8rem;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+/* Order List Grid Layout */
+.OrderList {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* Cards will fit in rows based on available space */
+    gap: 20px; /* Spacing between cards */
+    margin-top: 20px;
+}
+
+.OrderItem {
+    padding: 15px;
+    border: 1px solid #ddd;
+    background-color: #f9f9f9;
+    border-radius: 5px;
+    transition: box-shadow 0.3s ease;
+}
+
+.OrderItem:hover {
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.OrderItem h3,
+.OrderItem h4 {
+    margin-bottom: 10px;
+}
+
+.OrderItem p,
+.OrderItemDetails p {
+    margin: 5px 0;
+}
+
+.OrderItemDetails {
+    margin-left: 20px;
+    margin-bottom: 10px;
+}
+
+.OrderItemDetails ul {
+    padding-left: 20px;
+}
+
+.OrderItemDetails li {
+    list-style: disc;
+}
+
+.OrderItem hr {
+    margin-top: 20px;
+}
+
+/* Responsive Styling */
+
+/* Medium-sized screens (tablets, small laptops) */
+@media (max-width: 1024px) {
+    .OrderItem {
+        padding: 12px;
+    }
+
+    .Order h2 {
+        font-size: 1.6rem;
+    }
+
+    .OrderItem h3 {
+        font-size: 1.4rem;
+    }
+
+    .OrderItem h4 {
+        font-size: 1.2rem;
+    }
+
+    .OrderItemDetails {
+        margin-left: 10px;
+    }
+}
+
+/* Small screens (landscape phones, small tablets) */
+@media (max-width: 768px) {
+    .Order {
+        padding: 10px;
+    }
+
+    .OrderItem {
+        padding: 10px;
+    }
+
+    .Order h2 {
+        font-size: 1.4rem;
+    }
+
+    .OrderItem h3 {
+        font-size: 1.2rem;
+    }
+
+    .OrderItem h4 {
+        font-size: 1.1rem;
+    }
+
+    .OrderItemDetails {
+        margin-left: 5px;
+    }
+
+    .OrderItemDetails p,
+    .OrderItem p {
+        font-size: 0.95rem;
+    }
+
+    .OrderItemDetails ul {
+        padding-left: 15px;
+    }
+
+    .OrderItem hr {
+        margin-top: 15px;
+    }
+}
+
+/* Extra small screens (portrait phones) */
+@media (max-width: 480px) {
+    .Order {
+        padding: 5px;
+    }
+
+    .OrderItem {
+        padding: 8px;
+    }
+
+    .Order h2 {
+        font-size: 1.2rem;
+    }
+
+    .OrderItem h3 {
+        font-size: 1.1rem;
+    }
+
+    .OrderItem h4 {
+        font-size: 1rem;
+    }
+
+    .OrderItemDetails {
+        margin-left: 3px;
+    }
+
+    .OrderItemDetails p,
+    .OrderItem p {
+        font-size: 0.9rem;
+    }
+
+    .OrderItemDetails ul {
+        padding-left: 10px;
+    }
+
+    .OrderItem hr {
+        margin-top: 10px;
+    }
+}

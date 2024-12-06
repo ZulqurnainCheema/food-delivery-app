@@ -1,0 +1,193 @@
+.Cart {
+    margin-top: 100px;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.Cart h2 {
+    text-align: center;
+    color: var(--primarycolor);
+    margin-bottom: 20px;
+}
+
+.CartItemsTitle {
+    display: grid;
+    grid-template-columns: 1fr 1.5fr 1fr 1fr 1fr 0.5fr;
+    color: #555;
+    font-size: min(3vw, 15px);
+    align-items: center;
+    border-bottom: 2px solid #eaeaea;
+    padding-bottom: 10px;
+}
+
+.CartItemsItems {
+    display: grid;
+    grid-template-columns: 1fr 1.5fr 1fr 1fr 1fr 0.5fr;
+    align-items: center;
+    padding: 15px 0;
+    margin: 10px 0;
+    color: #333;
+}
+
+.CartItemsItems img {
+    width: min(70px, 12vw);
+    border-radius: 5px;
+    box-shadow: 0 1px 5px rgba(0, 0, 0, 0.1);
+}
+
+.CartItemsItems > div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Center content vertically */
+}
+
+.CartItemsTitle span {
+    display: flex;
+    gap: min(10px, 1vw);
+    padding: 0;
+    align-items: center;
+}
+.AddOns{
+    font-size: smaller;
+}
+.Quantity{
+    color: var(--primarycolor);
+    font-weight: bolder;
+}
+.Cross img {
+    width: 20px;
+    cursor: pointer;
+    transition: transform 0.2s;
+    align-self: center; /* Center the cross icon */
+}
+
+.Cross img:hover {
+    transform: scale(1.1);
+}
+
+.CartBottom {
+    margin-top: 40px;
+    display: flex;
+    justify-content: space-between; /* Keep elements side by side */
+    gap: 20px;
+}
+
+.CartTotals {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.CartTotalsDetails {
+    display: grid;
+    grid-template-columns: 1fr auto;
+    color: #555;
+}
+
+.CartTotalsDetails p {
+    margin: 0;
+}
+
+.CartTotals hr {
+    margin: 10px 0;
+}
+
+.CartTotals button {
+    border: none;
+    color: white;
+    background-color: var(--primarycolor);
+    width: 100%; /* Full width on small screens */
+    padding: 12px;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.CartTotals button:hover {
+    background-color: darken(var(--primarycolor), 10%);
+}
+
+.CartPromoCode {
+    flex: 1;
+}
+
+.CartPromoCode p {
+    color: #555;
+}
+
+.CartPromoCodeInput {
+    margin-top: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #eaeaea;
+    border-radius: 4px;
+}
+
+.CartPromoCodeInput input {
+    border: none;
+    outline: none;
+    padding: 10px;
+    border-radius: 4px 0 0 4px;
+    flex: 1;
+}
+
+.CartPromoCodeInput button {
+    padding: 12px 20px;
+    border: none;
+    background-color: black;
+    color: white;
+    border-radius: 0 4px 4px 0;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.CartPromoCodeInput button:hover {
+    background-color: #333;
+}
+
+@media (max-width: 750px) {
+    .CartItemsTitle, .CartItemsItems {
+        grid-template-columns: 1fr 1.5fr  1fr 1fr 0.5fr ; /* Reduce columns */
+        font-size: min(3vw, 12px);
+    }
+
+    .CartItemsItems img {
+        width: min(60px, 10vw);
+    }
+
+    .Cross img {
+        width: 15px;
+        align-self: flex-start; /* Align to the top to avoid overlap */
+    }
+
+    .CartBottom {
+        flex-direction: column; /* Stack elements */
+        gap: 10px; /* Adjusted gap */
+    }
+
+    .CartTotals {
+        width: 100%; /* Full width on small screens */
+    }
+
+    .CartPromoCodeInput {
+        flex-direction: row; /* Maintain row layout */
+        align-items: center; /* Align items centrally */
+    }
+
+    .CartPromoCodeInput button {
+        width: auto; /* Allow button to auto size */
+    }
+    .Quantity{
+        color: var(--primarycolor);
+        font-weight: bolder;
+        justify-self: center;
+    }
+}

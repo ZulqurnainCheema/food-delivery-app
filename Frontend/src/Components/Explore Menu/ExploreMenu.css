@@ -1,0 +1,62 @@
+:root{
+    --primarycolor:#FF0101;
+}
+.ExploreMenu{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.ExploreMenu h1{
+    color: #262626;
+    font-weight: 500px;;
+}
+.ExploreMenuText{
+    max-width: 60%;
+    color: #262626;
+}
+.ExploreMenuList{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    gap: 30px;
+    margin: 20px 0px;
+    overflow-x: scroll;
+}
+.ExploreMenuList {
+    overflow: auto; /* Ensure the element can scroll if needed */
+    scrollbar-width: none; /* Hide scrollbar in Firefox */
+}
+
+.ExploreMenuList::-webkit-scrollbar {
+    display: none; /* Hide scrollbar in Chrome, Safari, Opera */
+}
+.ExploreMenuListItem img{
+    width: 5vw;
+    min-width: 80px;
+    cursor: pointer;
+    border-radius: 50%;
+    transition: 0.2s;
+}
+.ExploreMenuListItem p{
+    margin-top: 10px;
+    color: #747747;
+    font-size: max(1.4vw,16px);
+    cursor: pointer;
+}
+.ExploreMenu hr{
+    margin: 10px 0px;
+    height: 2px;
+    background-color: #e2e2e2;
+    border: none;
+}
+.ExploreMenuListItem .active  {
+    border: 4px solid tomato;
+    padding: 4px;
+}
+@media (max-width:1050px){
+    .ExploreMenuText{
+        max-width: 100%;
+        font-size: 14px;
+    }
+}

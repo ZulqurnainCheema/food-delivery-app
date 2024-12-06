@@ -1,0 +1,151 @@
+.Add{
+    width: 70%;
+    margin-left: max(5vw,25px);
+    margin-top: 50px;
+    color: #6d6d6d;
+    font-size: 16px;
+}
+.Add form{
+    gap: 20px;
+}
+.AddImgUpload img{
+    width: 120px;
+}
+.AddProductName, .AddProductDescription{
+    width: max(40%,280px);
+}
+.AddProductName input,.AddProductDescription textarea{
+    padding: 10px;
+}
+.AddCategoryPrice{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+.AddCategoryPrice select , .AddCategoryPrice input{
+    max-width: 120px;
+    padding: 10px;
+}
+.AddSizes{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+/* AddOns */
+.AddAddOns{
+    display: flex;
+    align-items: center;
+    gap: 10px
+}
+.AddOnPricePair {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.AddOnPricePair div {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+
+.AddOnPricePair input {
+    padding: 10px;
+    font-size: 14px;
+    width: 120px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.AddOnPricePair button {
+    background-color: var(--primarycolor);
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.AddOnPricePair button:hover {
+    background-color: #c9302c ;
+}
+
+.AddOnPricePair > button {
+    background-color: black;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    max-width: 120px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.AddOnPricePair > button:hover {
+    background-color: #333;
+}
+
+/* Container for each size-price pair */
+.SizePricePair {
+    display: flex;
+    flex-direction: column; /* To make each size-price pair appear vertically */
+    gap: 10px;
+    margin-bottom: 20px; /* Space between each size-price pair and the 'Add Size' button */
+}
+
+/* Style for the individual size and price input fields */
+.SizePricePair div {
+    display: flex;
+    gap: 20px;
+    align-items: center; /* Ensures inputs and button align vertically */
+}
+
+/* Style for the size and price input fields */
+.SizePricePair input {
+    padding: 10px;
+    font-size: 14px;
+    width: 120px; /* Adjust width as needed */
+    box-sizing: border-box; /* Ensure padding does not affect the width */
+    border: 1px solid #ccc;
+    border-radius: 5px; /* Slight rounding for a clean look */
+}
+
+/* Style for the remove button */
+.SizePricePair button {
+    background-color: var(--primarycolor); /* Red background for 'Remove' button */
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+/* Button hover effect */
+.SizePricePair button:hover {
+    background-color: #c9302c; /* Darker red when hovering */
+}
+
+/* Style for the "+ Add Size" button */
+.SizePricePair > button {
+    background-color: black;
+    color: white;
+    max-width: 120px;
+    padding: 10px 20px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    margin-top: 10px;
+}
+
+/* Hover effect for "+ Add Size" button */
+.SizePricePair > button:hover {
+    background-color: #333; /* Slightly lighter black when hovering */
+}
+
+.AddButton{
+    max-width: 120px;
+    border: none;
+    padding: 10px;
+    background: black;
+    color: white;
+    cursor: pointer;
+}

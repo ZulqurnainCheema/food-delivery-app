@@ -1,0 +1,38 @@
+.ListTableFormat{
+    display: grid;
+    grid-template-columns: 0.5fr 1fr 1fr 1fr 1fr 0.5fr;
+    align-items: center;
+    gap: 10px;
+    padding: 12px 15px;
+    border: 1px solid #cacaca;
+    font-size: 13px;
+}
+.ListTableFormat .Title{
+    background-color: #f9f9f9;
+}
+.ListTableFormat img{
+    max-width: 40px;
+}
+.Cursor{
+    cursor: pointer;
+    justify-self: center;
+    background-color: var(--primarycolor);
+    color: white;
+    width: 40px;
+    text-align: center;
+    border-radius: 4px;
+}
+@media (max-width:600px) {
+    .ListTableFormat{
+        grid-template-columns:1fr 1fr 1fr ;
+        gap: 5px;
+        font-size: 11px;
+    }
+    .ListTableFormat div{
+        display: flex;
+        flex-direction: column;
+    }
+    .ListTableFormat .Title{
+        display: none;
+    }
+}

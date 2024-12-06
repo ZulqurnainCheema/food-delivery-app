@@ -1,0 +1,43 @@
+.PlaceOrder{
+    display: flex;
+    align-items: start;
+    justify-content: space-between;
+    gap: 50px;
+    margin-top: 100px;
+}
+.PlaceOrderLeft{
+    width: 100%;
+    max-width:max(30%,500px);
+}
+.PlaceOrderLeft .Title{
+    font-size: 30px;
+    font-weight: 600;
+    margin-bottom: 50px;
+}
+.PlaceOrderLeft input{
+    margin-bottom: 15px;
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #c5c5c5;
+    border-radius: 4px;
+    outline-color: var(--primarycolor);
+}
+.PlaceOrderLeft .MultiFields{
+    display: flex;
+    gap: 10px;
+}
+.PlaceOrderRight{
+    width: 100%;
+    max-width: max(40%,500px);
+}
+.CartTotals button{
+    margin-top: 30px;
+}
+@media (max-width:750px){
+    .PlaceOrder{
+        flex-direction: column;
+    }
+   .CartTotals button{
+    align-self: center;
+   }
+}
