@@ -28,8 +28,7 @@ connectDB(
 
 app.use("/api/food",foodRouter)
 
-// Update the static files path
-app.use("/image", express.static("public"))
+app.use("/image",express.static("uploads"))
 
 app.use("/api/user",userRouter)
 
