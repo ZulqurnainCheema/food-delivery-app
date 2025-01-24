@@ -12,7 +12,7 @@ const FoodItem = ({ id, name, price, description, image }) => {
       {" "}
       {/* Wrapping the item in a Link for page navigation */}
       <div className="FoodItemImgContainer">
-        <img className="FoodItemImg" src={{url}+'/image/'+{image}} alt={name} />{" "}
+        <img className="FoodItemImg" src={url + "/image/" + image} alt={name} />{" "}
         {/* Displaying food item image */}
       </div>
       <div className="FoodItemInfo">
