@@ -6,7 +6,7 @@ export const StoreContext = createContext(null);
 const StoreContextProvider = (props) => {
   const [food_list, setFoodList] = useState([]);    // State to hold food items list
   const [token, setToken] = useState("");          // State to hold auth token
-  const url = "https://food-delivery-app-2-bdp6.onrender.com";             // API base URL
+  const url = "http://localhost:4000";             // API base URL
 
   // Function to fetch the food list from the server
   const fetchFoodList = async () => {

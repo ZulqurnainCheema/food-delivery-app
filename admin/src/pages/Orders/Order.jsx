@@ -11,7 +11,7 @@ const Order = () => {
     const fetchOrders = async () => {
       try {
         const token = localStorage.getItem('token');  // Assuming token is stored in localStorage
-        const response = await axios.get('https://food-delivery-app-2-bdp6.onrender.com/api/order/all', {
+        const response = await axios.get('http://localhost:4000/api/order/all', {
           headers: {
             Authorization: `Bearer ${token}`,
           },
